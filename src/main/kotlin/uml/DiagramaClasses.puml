@@ -1,27 +1,48 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+interface Comparable{
+  {abstract} + equals(other): Boolean
+}
+interface Comparator {
+    {abstract} + compare(o1, o2): Int
+ }
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
+abstract class AgendaAbstracta {
+     - contactes: List<Contacte>
+     + constructor()
+     {abstract} + add(nom: String, telefon: String, edat: Int)
+     {abstract} + add(c: Contacte)
+     {abstract} + remove (c: Contacte)
+     {abstract} + search(nom: String): List<Contacte>
+     {abstract} + searchExact(nom: String): List<Contacte>
+     {abstract} + searchLike(start: String, end: String, contain: String): List<Contacte>
+     {abstract} + sorted( ): List<Contacte>
+}
+abstract class ContacteAbstracte {
+    - nom: String
+    - telefon: String
+    - edat: Int
+    + constructor(String, String, Int)
+    + getNom(): String
+    + getTelefon(): String
+    + getEdat(): Int
+    + equals(other): Boolean
+    }
 
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-Object[] elementData
-size()
+class ComparatorContacte {
+    + compare (c1: Contacte, c2: Contacte): Int
 }
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
+class Agenda {
 }
 
+
+AgendaAbstracta <|-- Agenda
+Comparable <|.. ContacteAbstracte
+ContacteAbstracte <|-- Contacte
+Comparator <|..ComparatorContacte
+
+AgendaAbstracta *-- Contacte
+ComparatorContacte *--Contacte
 @enduml
