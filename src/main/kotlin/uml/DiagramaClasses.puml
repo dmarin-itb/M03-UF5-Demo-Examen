@@ -1,48 +1,19 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-interface Comparable{
-  {abstract} + equals(other): Boolean
-}
-interface Comparator {
-    {abstract} + compare(o1, o2): Int
- }
-
-abstract class AgendaAbstracta {
-     - contactes: List<Contacte>
+abstract class CalculadoraAbstracta {
+     - operacions: List<Operacio>
      + constructor()
-     {abstract} + add(nom: String, telefon: String, edat: Int)
-     {abstract} + add(c: Contacte)
-     {abstract} + remove (c: Contacte)
-     {abstract} + search(nom: String): List<Contacte>
-     {abstract} + searchExact(nom: String): List<Contacte>
-     {abstract} + searchLike(start: String, end: String, contain: String): List<Contacte>
-     {abstract} + sorted( ): List<Contacte>
+     {abstract} + add(String, Int, Int)
+     {abstract} + add(Operacio)
+     {abstract} + executar (Int) : Int
 }
-abstract class ContacteAbstracte {
-    - nom: String
-    - telefon: String
-    - edat: Int
-    + constructor(String, String, Int)
-    + getNom(): String
-    + getTelefon(): String
-    + getEdat(): Int
-    + equals(other): Boolean
+
+class Operacio {
+    + constructor(String, Int, Int)
     }
 
-class ComparatorContacte {
-    + compare (c1: Contacte, c2: Contacte): Int
-}
 
-class Agenda {
-}
-
-
-AgendaAbstracta <|-- Agenda
-Comparable <|.. ContacteAbstracte
-ContacteAbstracte <|-- Contacte
-Comparator <|..ComparatorContacte
-
-AgendaAbstracta *-- Contacte
-ComparatorContacte *--Contacte
+CalculadoraAbstracta <|-- Calculadora
+CalculadoraAbstracta *-right- Operacio
 @enduml

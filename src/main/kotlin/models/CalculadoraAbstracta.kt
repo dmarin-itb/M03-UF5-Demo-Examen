@@ -6,7 +6,6 @@ abstract class CalculadoraAbstracta  {
         operacions = ArrayList<Operacio>()
     }
 
-
     fun getOperacions(): ArrayList<Operacio> {
         return operacions
     }

@@ -79,7 +79,7 @@ class CalculadoraTest {
         try {
             instance.add(o)
             fail("Ha permès afegir una operació nul·la")
-        } catch (ex: OperacioInexistentException) {
+        } catch (ex: NullOperacioException) {
             // Ha de passar per aquí
         }
     }
@@ -98,7 +98,7 @@ class CalculadoraTest {
     fun test_05() {
         println("Provant l'operació suma")
         val result:Int = c.executar(2)
-        assertEquals(51, result)
+        assertEquals(41, result)
     }
 
     /**
@@ -109,6 +109,34 @@ class CalculadoraTest {
         println("Provant l'operació resta")
         val result:Int = c.executar(3)
         assertEquals(6, result)
+    }
+
+    @Test
+    fun test_07() {
+        println("Provant l'operació resta")
+        val result:Int = c.executar(4)
+        assertEquals(10, result)
+    }
+
+    /**
+     * Test of opera operation, of class Calculadora.
+     * Opera és una operació fictícia que fa el següent:
+     *    a opera b = (a+b)*(a-b)
+     * */
+    @Test
+    fun test_08() {
+        println("Provant l'operació opera")
+        val result:Int = c.executar(5)
+        // (3+4)*(3-4) = 7*(-1) = -7
+        assertEquals(-7, result)
+    }
+
+    @Test
+    fun test_09() {
+        println("Provant l'operació opera")
+        val result:Int = c.executar(6)
+        // (5+5)*(5-5) = 10*0 = 0
+        assertEquals(0, result)
     }
 
 }
