@@ -4,6 +4,7 @@
 abstract class CalculadoraAbstracta {
      - operacions: List<Operacio>
      + constructor()
+     + getOperacions() : List<Operacio>
      {abstract} + add(String, Int, Int)
      {abstract} + add(Operacio)
      {abstract} + executar (Int) : Int

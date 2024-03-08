@@ -1,44 +1,4 @@
-1.- Ha afegit correctament al Josep Antoni
-2.- Ha afegit correctament l'Anna Maria!
-3.- Ha eliminat correctament al Josep Antoni!
-4.- Mirant d'eliminar a l'Anna Maria de joveneta...
-5.- Sembla ser que aquest contacte no existeix...
-6.- Ara sí elimino a l'Anna Maria
-7.- Ha eliminat correctament l'Anna Maria!
-8.- Provo d'eliminar-la una altra vegada, però ara l'agenda ja es troba buida
-9.- No puc eliminar res que l'agenda es troba buida!!
-10.- Miro d'afegir dues vegades el mateix contacte.
-11.- La primera vegada sí que ho permet.
-12.- El contacte ja existeix a l'agenda
-13.- Afegits sis contactes a l'agenda
-14.- No es pot ordenar una llista buida!
-15.- Obtinc la llista de contactes ordenada
-16.x.- Contacte: Josep Antoni Margarit de 77 anys i telèfon: 93 xxx xx xx
-16.x.- Contacte: José María García de 22 anys i telèfon: 666 555 333
-16.x.- Contacte: Juan García de 45 anys i telèfon: 666 555 222
-16.x.- Contacte: Juan García de 65 anys i telèfon: 666 555 666
-16.x.- Contacte: Juan García de 70 anys i telèfon: 666 555 111
-16.x.- Contacte: Marta López de 28 anys i telèfon: 666 555 555
-16.x.- Contacte: Pedro López de 33 anys i telèfon: 666 555 444
-17.- No es pot buscar sobre una llista buida!
-18.- Buscar un registre inexistent
-19.- No existeix el contacte buscat!
-20.- He trobat tots aquests contactes que contenen 'Mar'
-21.x - Contacte: Josep Antoni Margarit
-21.x - Contacte: José María García
-21.x - Contacte: Marta López
-22.- No es pot buscar sobre una llista buida!
-23.- No existeix el contacte buscat!
-24.- He trobat tots aquests contactes que es diuen 'Juan García'
-25.x.- Contacte: Juan García - Edat: 45
-25.x.- Contacte: Juan García - Edat: 65
-25.x.- Contacte: Juan García - Edat: 70
-26.- No es pot buscar sobre una llista buida!
-27.- No existeix el contacte buscat!
-28.- He trobat tots aquests contactes que es diuen 'Juan García'
-29.x.- Contacte: José María García - Edat: 22
-29.x.- Contacte: Juan García - Edat: 45
-29.x.- Contacte: Juan García - Edat: 65
-29.x.- Contacte: Juan García - Edat: 70
-30.- He trobat tots aquests contactes que es diuen 'J..M..r..cía'
-31.x.- Contacte: José María García - Edat: 22
+1.- Afegida correctament l'operació
+2.- Ha afegit una segona operacio
+3.- El resultat de la primera operació és 4
+4.- El resultat de la segona operació és 0
