@@ -4,7 +4,7 @@ import models.*
 import exceptions.*
 
 /**
- * No heu de tocar res en aquest fitxer. Heu d'implementar la classe Agenda per
+ * No heu de tocar res en aquest fitxer. Heu d'implementar la classe Operacio per
  * tal que aquest programa funcioni correctament. Mireu que passi tots els jocs
  * de prova, però tingueu en compte que hi haurà altres casos de prova privats.
  */
